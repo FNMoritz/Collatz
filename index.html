@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<h1>Collatz-Folge</h1>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function Collatz() {
+
+        var i;
+        var vN = parseFloat(document.getElementById("idN").value);
+        var Ergebnis = document.getElementById("idErgebnis");
+
+        while (vN !==1){
+
+        if (vN % 2 == 0){
+            vN = vN / 2;
+        }
+        else{
+            vN = 3* vN + 1;
+        }
+        vErgbnis.innerHtml += vN + "->";
+        }
+</script>
+<body>
+ <input type="number" id="idN" min ="1" value="28">
+ <button onclick="fcol();">Collatz</button>
+ <div id="idErgebnis"></div> <br>
+</body>
+</html>
